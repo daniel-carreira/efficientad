@@ -1,0 +1,47 @@
+{
+  "sources": [
+    {
+      "id": 0,
+      "rois": {
+        "712:686:35:199": [
+          {
+            "id": 1,
+            "type": "efficientad",
+            "path": "models/exported/efficientad_tensorrt_roi1.pt",
+            "input_size": [256, 256],
+            "params": {
+              "combined_map_threshold": 0.16
+            }
+          }
+        ],
+        "892:660:1045:0": [
+          {
+            "id": 2,
+            "type": "efficientad",
+            "path": "models/exported/efficientad_tensorrt_roi2.pt",
+            "input_size": [256, 256],
+            "params": {
+              "combined_map_threshold": 0.25
+            }
+          }
+        ],
+        "669:677:1891:0": [
+          {
+            "id": 3,
+            "type": "efficientad",
+            "path": "models/exported/efficientad_tensorrt_roi3.pt",
+            "input_size": [256, 256],
+            "params": {
+              "combined_map_threshold": 0.23
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "params": {
+    "tracker_iou_threshold": 0.15,
+    "tracker_min_hits": 5,
+    "tracker_max_age": 3
+  }
+}
